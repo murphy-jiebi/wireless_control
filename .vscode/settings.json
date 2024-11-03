@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "lcd_usart3.h": "c",
+        "bat.h": "c",
+        "lcd.h": "c",
+        "stm32f10x.h": "c",
+        "bsp_ws281x.h": "c",
+        "wired_port.h": "c",
+        "string.h": "c",
+        "key.h": "c",
+        "stdio.h": "c",
+        "delay.h": "c",
+        "tim.h": "c"
+    }
+}

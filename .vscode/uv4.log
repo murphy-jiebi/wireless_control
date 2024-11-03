@@ -1,0 +1,94 @@
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling delay.c...
+compiling bat.c...
+compiling LCD.c...
+compiling stm32f10x_it.c...
+compiling LCD_USART3.c...
+compiling usart1.c...
+compiling tim.c...
+compiling main.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+compiling bsp_ws281x.c...
+compiling wired_port.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling misc.c...
+compiling diskio.c...
+compiling my_sd.c...
+compiling ff.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_spi.c...
+compiling sd_driver.c...
+compiling spi.c...
+compiling key.c...
+App\KEY\key.c(965): error:  #20: identifier "Key1_Port_Select" is undefined
+  			Key1_Port_Select[0] = !Key1_Port_Select[0];
+App\KEY\key.c(980): error:  #20: identifier "Key1_Port_Select" is undefined
+  			Key1_Port_Select[1] = !Key1_Port_Select[1];
+App\KEY\key.c(995): error:  #20: identifier "Key1_Port_Select" is undefined
+  			Key1_Port_Select[2] = !Key1_Port_Select[2];
+App\KEY\key.c(1010): error:  #20: identifier "Key1_Port_Select" is undefined
+  			Key1_Port_Select[3] = !Key1_Port_Select[3];
+App\KEY\key.c(1025): error:  #20: identifier "Key1_Port_Select" is undefined
+  			Key1_Port_Select[4] = !Key1_Port_Select[4];
+App\KEY\key.c(1040): error:  #20: identifier "Key1_Port_Select" is undefined
+  			Key1_Port_Select[5] = !Key1_Port_Select[5];
+App\KEY\key.c(1057): error:  #20: identifier "Key2_Port_Select" is undefined
+  			Key2_Port_Select[0] = !Key2_Port_Select[0];
+App\KEY\key.c(1072): error:  #20: identifier "Key2_Port_Select" is undefined
+  			Key2_Port_Select[1] = !Key2_Port_Select[1];
+App\KEY\key.c(1087): error:  #20: identifier "Key2_Port_Select" is undefined
+  			Key2_Port_Select[2] = !Key2_Port_Select[2];
+App\KEY\key.c(1102): error:  #20: identifier "Key2_Port_Select" is undefined
+  			Key2_Port_Select[3] = !Key2_Port_Select[3];
+App\KEY\key.c(1117): error:  #20: identifier "Key2_Port_Select" is undefined
+  			Key2_Port_Select[4] = !Key2_Port_Select[4];
+App\KEY\key.c(1132): error:  #20: identifier "Key2_Port_Select" is undefined
+  			Key2_Port_Select[5] = !Key2_Port_Select[5];
+App\KEY\key.c(1149): error:  #20: identifier "Key3_Port_Select" is undefined
+  			Key3_Port_Select[0] = !Key3_Port_Select[0];
+App\KEY\key.c(1164): error:  #20: identifier "Key3_Port_Select" is undefined
+  			Key3_Port_Select[1] = !Key3_Port_Select[1];
+App\KEY\key.c(1179): error:  #20: identifier "Key3_Port_Select" is undefined
+  			Key3_Port_Select[2] = !Key3_Port_Select[2];
+App\KEY\key.c(1194): error:  #20: identifier "Key3_Port_Select" is undefined
+  			Key3_Port_Select[3] = !Key3_Port_Select[3];
+App\KEY\key.c(1209): error:  #20: identifier "Key3_Port_Select" is undefined
+  			Key3_Port_Select[4] = !Key3_Port_Select[4];
+App\KEY\key.c(1224): error:  #20: identifier "Key3_Port_Select" is undefined
+  			Key3_Port_Select[5] = !Key3_Port_Select[5];
+App\KEY\key.c(1241): error:  #20: identifier "Key4_Port_Select" is undefined
+  			Key4_Port_Select[0] = !Key4_Port_Select[0];
+App\KEY\key.c(1256): error:  #20: identifier "Key4_Port_Select" is undefined
+  			Key4_Port_Select[1] = !Key4_Port_Select[1];
+App\KEY\key.c(1271): error:  #20: identifier "Key4_Port_Select" is undefined
+  			Key4_Port_Select[2] = !Key4_Port_Select[2];
+App\KEY\key.c(1286): error:  #20: identifier "Key4_Port_Select" is undefined
+  			Key4_Port_Select[3] = !Key4_Port_Select[3];
+App\KEY\key.c(1301): error:  #20: identifier "Key4_Port_Select" is undefined
+  			Key4_Port_Select[4] = !Key4_Port_Select[4];
+App\KEY\key.c(1316): error:  #20: identifier "Key4_Port_Select" is undefined
+  			Key4_Port_Select[5] = !Key4_Port_Select[5];
+App\KEY\key.c(1333): error:  #20: identifier "Key5_Port_Select" is undefined
+  			Key5_Port_Select[0] = !Key5_Port_Select[0];
+App\KEY\key.c(1348): error:  #20: identifier "Key5_Port_Select" is undefined
+  			Key5_Port_Select[1] = !Key5_Port_Select[1];
+App\KEY\key.c(1363): error:  #20: identifier "Key5_Port_Select" is undefined
+  			Key5_Port_Select[2] = !Key5_Port_Select[2];
+App\KEY\key.c(1378): error:  #20: identifier "Key5_Port_Select" is undefined
+  			Key5_Port_Select[3] = !Key5_Port_Select[3];
+App\KEY\key.c(1393): error:  #20: identifier "Key5_Port_Select" is undefined
+  			Key5_Port_Select[4] = !Key5_Port_Select[4];
+App\KEY\key.c(1408): error:  #20: identifier "Key5_Port_Select" is undefined
+  			Key5_Port_Select[5] = !Key5_Port_Select[5];
+App\KEY\key.c: 0 warnings, 30 errors
+compiling adc.c...
+".\Objects\Demo_proj.axf" - 30 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02
