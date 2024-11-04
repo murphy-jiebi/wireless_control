@@ -3,7 +3,7 @@
 .\objects\task_hc14.o: .\User\main.h
 .\objects\task_hc14.o: .\Libraries\CMSIS\stm32f10x.h
 .\objects\task_hc14.o: .\Libraries\CMSIS\core_cm3.h
-.\objects\task_hc14.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\task_hc14.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\task_hc14.o: .\Libraries\CMSIS\system_stm32f10x.h
 .\objects\task_hc14.o: .\User\stm32f10x_conf.h
 .\objects\task_hc14.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -30,8 +30,8 @@
 .\objects\task_hc14.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\task_hc14.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\task_hc14.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\task_hc14.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
-.\objects\task_hc14.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\task_hc14.o: D:\MKD539\ARM\ARMCC\Bin\..\include\math.h
+.\objects\task_hc14.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\task_hc14.o: .\BSP\Inc\bsp_gpio.h
 .\objects\task_hc14.o: .\User\delay.h
 .\objects\task_hc14.o: .\User\tim.h

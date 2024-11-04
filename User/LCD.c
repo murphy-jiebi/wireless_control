@@ -372,8 +372,8 @@ void LcdRefresh(void)
                         LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
                         LCD_USART3_SendString((unsigned char *)"vis btn_cancel,1");
                         LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
-                        LCD_USART3_SendString((unsigned char *)"txt_ignition.pic=5");
-                        LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
+//                        LCD_USART3_SendString((unsigned char *)"txt_ignition.pic=5");
+//                        LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
                     }else{
                         LCD_USART3_SendString((unsigned char *)"vis btn_confirm,0");
                         LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
@@ -381,6 +381,8 @@ void LcdRefresh(void)
                         LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
                         LCD_USART3_SendString((unsigned char *)"txt_start.pic=5");
                         LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
+						LCD_USART3_SendString((unsigned char *)"txt_ignition.pic=5");
+						LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
                     }
                 }
             }
@@ -388,6 +390,15 @@ void LcdRefresh(void)
     }
 }
 
+void LCD_cancelFire(void)
+{
+	LCD_USART3_SendString((unsigned char *)"vis btn_confirm,0");
+	LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
+	LCD_USART3_SendString((unsigned char *)"vis btn_cancel,0");
+	LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
+	LCD_USART3_SendString((unsigned char *)"txt_start.pic=5");
+	LCD_USART3_SendThreeBytes(0xff, 0xff ,0xff);
+}
 extern void bsp_PutKey(uint8_t _ulResult);
 
 void LcdRecHandle(void)
@@ -425,7 +436,7 @@ void LcdRecHandle(void)
                 LCD_Log_Window_Status = 1;
                 break;
             case 7:
-                keyState[FUNC_FIRE]=NO_CON;
+//                keyState[FUNC_FIRE]=NO_CON;
                 keyState[FUNC_START]=NO_CON;
                 TIM5_Count = 0;
                 TIM_Cmd(TIM5, DISABLE);

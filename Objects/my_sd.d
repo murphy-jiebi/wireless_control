@@ -4,7 +4,7 @@
 .\objects\my_sd.o: .\User\main.h
 .\objects\my_sd.o: .\Libraries\CMSIS\stm32f10x.h
 .\objects\my_sd.o: .\Libraries\CMSIS\core_cm3.h
-.\objects\my_sd.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\my_sd.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\my_sd.o: .\Libraries\CMSIS\system_stm32f10x.h
 .\objects\my_sd.o: .\User\stm32f10x_conf.h
 .\objects\my_sd.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -31,13 +31,13 @@
 .\objects\my_sd.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\my_sd.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\my_sd.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\my_sd.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
-.\objects\my_sd.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\my_sd.o: D:\MKD539\ARM\ARMCC\Bin\..\include\math.h
+.\objects\my_sd.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\my_sd.o: .\BSP\Inc\bsp_gpio.h
 .\objects\my_sd.o: .\User\delay.h
 .\objects\my_sd.o: .\User\tim.h
 .\objects\my_sd.o: .\App\FATFS\ff.h
 .\objects\my_sd.o: .\App\FATFS\integer.h
 .\objects\my_sd.o: .\App\FATFS\ffconf.h
-.\objects\my_sd.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\my_sd.o: D:\MKD539\ARM\ARMCC\Bin\..\include\string.h
 .\objects\my_sd.o: .\User\LCD_USART3.h

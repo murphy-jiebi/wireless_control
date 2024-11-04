@@ -3,7 +3,7 @@
 .\objects\sd_driver.o: .\User\main.h
 .\objects\sd_driver.o: .\Libraries\CMSIS\stm32f10x.h
 .\objects\sd_driver.o: .\Libraries\CMSIS\core_cm3.h
-.\objects\sd_driver.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sd_driver.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\sd_driver.o: .\Libraries\CMSIS\system_stm32f10x.h
 .\objects\sd_driver.o: .\User\stm32f10x_conf.h
 .\objects\sd_driver.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -30,8 +30,8 @@
 .\objects\sd_driver.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\sd_driver.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\sd_driver.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\sd_driver.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
-.\objects\sd_driver.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\sd_driver.o: D:\MKD539\ARM\ARMCC\Bin\..\include\math.h
+.\objects\sd_driver.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\sd_driver.o: .\BSP\Inc\bsp_gpio.h
 .\objects\sd_driver.o: .\User\delay.h
 .\objects\sd_driver.o: .\User\tim.h

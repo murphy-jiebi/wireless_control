@@ -2,7 +2,7 @@
 #include "usart2.h"
 #include "bsp_key.h"
 
-const uint8_t groupSn=3;
+const uint8_t groupSn=1;
 
 extern uint8_t flag_checkORfire[29];
 
@@ -54,6 +54,7 @@ void Hc14RecProcess(uint8_t *buf,uint8_t len)
     uint8_t temp_group=0;
     uint8_t temp_dev=0;
     uint8_t temp_ch=0;
+	uint8_t temp_ch1=0;
     for(i=0;i<len;i++)
     {
         if(buf[i]==0xFE)
@@ -82,6 +83,7 @@ void Hc14RecProcess(uint8_t *buf,uint8_t len)
     }
     temp_dev=(buf[3])&0x0f;
     temp_ch=buf[4];
+	temp_ch1=buf[5];
     switch(buf[2])
     {
         case 0x01:
@@ -97,11 +99,17 @@ void Hc14RecProcess(uint8_t *buf,uint8_t len)
             {
                 if(temp_ch&0x01)
                 {
-                    keyDevState[temp_dev-1][j]=NO_SELECT;
+					if(temp_ch1&0x01)
+					{
+						keyDevState[temp_dev-1][j]=FIRED;
+					}else{
+						keyDevState[temp_dev-1][j]=NO_SELECT;
+					}
                 }else{
                     keyDevState[temp_dev-1][j]=NO_CON;
                 }
                 temp_ch>>=1;
+				temp_ch1>>=1;
             }
             break;
         case 0xF2:
@@ -109,10 +117,16 @@ void Hc14RecProcess(uint8_t *buf,uint8_t len)
             
             for(i=0;i<6;i++)
             {    
-                if(keyDevState[temp_dev-1][i]==SELECTED)
+				if(temp_ch&0x01)
                 {
-                    keyDevState[temp_dev-1][i]=FIRED;
-                }
+					keyDevState[temp_dev-1][i]=FIRED;
+				}
+				
+				temp_ch>>=1;
+//                if(keyDevState[temp_dev-1][i]==SELECTED)
+//                {
+//                    keyDevState[temp_dev-1][i]=FIRED;
+//                }
                 if(keyDevState[temp_dev-1][i]==NO_SELECT)
                 {
                     all=1;

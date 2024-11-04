@@ -3,63 +3,51 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.34.0.0
-Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information:  ,  , LIC=VGXG8-3Q1X4-562Q2-9C8BA-AKND3-42BMP
+IDE-Version: ¦ÌVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  ,  , LIC=NQQMA-1GIK2-FW02N-Y3S18-3TT5F-AC3IF
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
-Toolchain Path:  D:\keil5\ARM\ARMCC\Bin
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  D:\MKD539\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 7 (build 960)
 Assembler:       Armasm.exe V5.06 update 7 (build 960)
 Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
 Library Manager: ArmAr.exe V5.06 update 7 (build 960)
 Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
-CPU DLL:         SARMCM3.DLL V5.34.0.0
-Dialog DLL:      DCM.DLL V1.17.3.0
-Target DLL:      CMSIS_AGDI.dll V1.32.13.0
-Dialog DLL:      TCM.DLL V1.48.0.0
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-C:\Users\murphy\Desktop\murphy\Demo_proj.uvprojx
-Project File Date:  09/23/2024
+C:\Users\user\Desktop\20241102\murphy (1)\Demo_proj.uvprojx
+Project File Date:  11/02/2024
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\MKD539\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling bsp_key.c...
-BSP\Src\bsp_key.c(106): warning:  #223-D: function "memset" declared implicitly
-  	memset(keyQueue.Buff, 0x00, KEY_BUF_SIZE);
-BSP\Src\bsp_key.c(257): warning:  #223-D: function "memcpy" declared implicitly
-                      memcpy(&keyState[DEV1],keyDevState[keyVal-REGION1],6);
-BSP\Src\bsp_key.c(261): warning:  #223-D: function "memset" declared implicitly
-                      memset(&keyState[DEV1],NO_CON,6);
-BSP\Src\bsp_key.c(276): warning:  #223-D: function "memcpy" declared implicitly
-                  memcpy(&keyState[DEV1],keyDevState[keyVal-REGION1],6);
-BSP\Src\bsp_key.c(345): warning:  #223-D: function "memcpy" declared implicitly
-              memcpy(&keyState[DEV1],keyDevState[preRegion-REGION1],6);
-BSP\Src\bsp_key.c(376): warning:  #1-D: last line of file ends without a newline
-  }
-BSP\Src\bsp_key.c(166): warning:  #177-D: variable "j"  was declared but never referenced
-      uint8_t i=0,j=0;
-BSP\Src\bsp_key.c: 7 warnings, 0 errors
+compiling task_hc14.c...
+Task\Src\task_hc14.c(141): warning:  #223-D: function "memcpy" declared implicitly
+                  memcpy(&keyState[DEV1],keyDevState[temp_dev-1],6);
+Task\Src\task_hc14.c: 1 warning, 0 errors
 linking...
-Program Size: Code=24618 RO-data=530 RW-data=200 ZI-data=4080  
+Program Size: Code=24966 RO-data=530 RW-data=200 ZI-data=4080  
 FromELF: creating hex file...
-".\Objects\Demo_proj.axf" - 0 Error(s), 7 Warning(s).
+".\Objects\Demo_proj.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: Keil
                 http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
-                Keil.STM32F1xx_DFP.2.3.0
+                Keil::STM32F1xx_DFP@2.3.0
                 STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
-  D:\keil5\pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+  D:/MKD539/ARM/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>

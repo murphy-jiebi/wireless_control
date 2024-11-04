@@ -29,6 +29,7 @@ void bsp_GpioInit(void)
     GPIO_InitTypeDef GPIOB_InitStructure = {0};
     GPIO_InitTypeDef GPIOC_InitStructure = {0};
     GPIO_InitTypeDef GPIOD_InitStructure = {0};
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
@@ -70,14 +71,14 @@ void bsp_GpioInit(void)
     //有线检测
     GPIOB_InitStructure.GPIO_Pin = GPIO_Pin_9 | GPIO_Pin_7 | GPIO_Pin_5 | GPIO_Pin_3;
     GPIOB_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING; // 这里配置为浮空输入应更合理，可以考虑下拉输入？
-    // GPIOB_InitStructure.GPIO_Mode = GPIO_Mode_IPD;
+    //GPIOB_InitStructure.GPIO_Mode = GPIO_Mode_IPD;
     GPIOB_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
     GPIO_Init(GPIOB, &GPIOB_InitStructure);
 
 
     GPIOC_InitStructure.GPIO_Pin = GPIO_Pin_12 | GPIO_Pin_10;
     GPIOC_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING; // 这里配置为浮空输入应更合理，可以考虑下拉输入？
-    // GPIOC_InitStructure.GPIO_Mode = GPIO_Mode_IPD;
+    //GPIOC_InitStructure.GPIO_Mode = GPIO_Mode_IPD;
     GPIOC_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
     GPIO_Init(GPIOC, &GPIOC_InitStructure);
 

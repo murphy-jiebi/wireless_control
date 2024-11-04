@@ -165,7 +165,7 @@ void keyHandle(void)
     uint8_t keyVal=0;
     uint8_t i=0,j=0;
     static uint8_t preKeyVal=0;
-    
+    uint8_t all=0,allPre=0;
 
     keyVal=bsp_GetKey();
     if(keyVal==0)
@@ -228,24 +228,45 @@ void keyHandle(void)
             {
                 return;
             }
+			for(i=0;i<6;i++)
+			{
+				if((keyDevState[preRegion-REGION1][i]==NO_SELECT) || (keyDevState[preRegion-REGION1][i]==SELECTED))
+				{
+					allPre=1;
+				}
+			}
             if(preRegion!=0)
             {
-                 for(i=0;i<6;i++)
+                for(i=0;i<6;i++)
                 {
-                    if(keyDevState[preRegion-REGION1][i]==SELECTED)
+                    if((keyDevState[preRegion-REGION1][i]==SELECTED) /*||(keyDevState[preRegion-REGION1][i]==FIRED)*/)
                     {
                         break;
                     }
+					
+					
                 }
                 if(i>=6)
                 {
                     if(keyVal!=preKeyVal)
                     {
-                        keyState[preRegion]=NO_SELECT;
+						if(allPre>0)
+						{
+							keyState[preRegion]=NO_SELECT;
+						}else{
+							keyState[preRegion]=FIRED;
+						}
+                        
                     }
                 }
             }
-            
+            for(i=0;i<6;i++)
+			{
+				if((keyDevState[keyVal-REGION1][i]==NO_SELECT) || (keyDevState[keyVal-REGION1][i]==SELECTED))
+				{
+					all=1;
+				}
+			}
             if(keyState[keyVal]==SELECTED)
             {
                 if(keyVal!=preKeyVal)
@@ -257,15 +278,22 @@ void keyHandle(void)
                     memcpy(&keyState[DEV1],keyDevState[keyVal-REGION1],6);
                     preRegion=keyVal;
                 }else{
-                    keyState[keyVal]=NO_SELECT;
-                    memset(&keyState[DEV1],NO_CON,6);
-                    for(i=0;i<6;i++)
-                    {
-                        if(keyDevState[keyVal-REGION1][i]==SELECTED)
-                        {
-                            keyDevState[keyVal-REGION1][i]=NO_SELECT;
-                        }
-                    }
+					
+					if(all>0)
+					{
+						keyState[keyVal]=NO_SELECT;
+						memset(&keyState[DEV1],NO_CON,6);
+						for(i=0;i<6;i++)
+						{
+							if(keyDevState[keyVal-REGION1][i]==SELECTED)
+							{
+								keyDevState[keyVal-REGION1][i]=NO_SELECT;
+							}
+						}
+					}else{
+						keyState[keyVal]=FIRED;
+						memset(&keyState[DEV1],NO_CON,6);
+					}
 //                    memcpy(&keyState[DEV1],keyDevState[keyVal-REGION1],6);
                     preRegion=0;
                 }
@@ -275,10 +303,15 @@ void keyHandle(void)
                 keyState[keyVal]=SELECTED;
                 memcpy(&keyState[DEV1],keyDevState[keyVal-REGION1],6);
                 preRegion=keyVal;
-            }
+            }else if(keyState[keyVal]==FIRED)
+			{
+				keyState[keyVal]=SELECTED;
+				memcpy(&keyState[DEV1],keyDevState[keyVal-REGION1],6);
+				preRegion=keyVal;
+			}
             else
             {
-                keyState[keyVal]=NO_SELECT;
+				
             }
             break;
         case DEV1:
@@ -357,10 +390,12 @@ void keyHandle(void)
             {
                 if(keyState[FUNC_FIRE]==SELECTED)
                 {
-                    keyState[FUNC_FIRE]=NO_CON;
+//                    keyState[FUNC_FIRE]=NO_CON;
                     keyState[FUNC_START]=NO_CON;
                     TIM5_Count = 0;
                     TIM_Cmd(TIM5, DISABLE);
+					extern void LCD_cancelFire(void);
+					LCD_cancelFire();
                     flagFire=1;
                 }else{
                     keyState[FUNC_FIRE]=SELECTED;

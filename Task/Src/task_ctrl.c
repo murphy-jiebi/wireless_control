@@ -11,7 +11,8 @@ void SelfCheck(void)
     static uint16_t CntPreVal=0;
     static uint8_t firstIn=0;
     static uint8_t flag1=0;
-    
+	
+	
     if(!flagSelfCheck)
     {
         return;
@@ -58,7 +59,7 @@ void SelfCheck(void)
             }else{
                 keyState[WIRE_R2]=NO_CON;
             }
-//            memset(&keyState[WIRE_L1],NO_SELECT,6);
+//           memset(&keyState[WIRE_L1],NO_SELECT,6);
             step=7;
         break;
         case 7:
@@ -130,7 +131,8 @@ void SelfCheck(void)
             flagSelfCheck=0;
             step=1;
             firstIn=0;
-        
+			
+			
             for(uint8_t i=7;i<19;i++)
             {
                 if(flag_checkORfire[i]==1)
@@ -282,6 +284,7 @@ void FireProcess(void)
             RESET_WIRE_R2;
 //            memset(&keyState[DEV1],NO_SELECT,6);
         
+			keyState[FUNC_FIRE]=NO_CON;
             for(uint8_t i=7;i<19;i++)
             {
                 if(flag_checkORfire[i]==3)
