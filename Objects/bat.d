@@ -1,7 +1,7 @@
 .\objects\bat.o: User\bat.c
 .\objects\bat.o: .\Libraries\CMSIS\stm32f10x.h
 .\objects\bat.o: .\Libraries\CMSIS\core_cm3.h
-.\objects\bat.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bat.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\bat.o: .\Libraries\CMSIS\system_stm32f10x.h
 .\objects\bat.o: .\User\stm32f10x_conf.h
 .\objects\bat.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -30,5 +30,5 @@
 .\objects\bat.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\objects\bat.o: User\bat.h
 .\objects\bat.o: User\delay.h
-.\objects\bat.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\bat.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\bat.o: .\App\ADC\adc.h

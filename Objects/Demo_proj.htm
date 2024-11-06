@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\Demo_proj.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Demo_proj.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sat Nov 02 20:03:31 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Nov 06 21:54:07 2024
 <BR><P>
 <H3>Maximum Stack Usage =        552 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -799,8 +799,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[cf]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ReadInputDataBit))
-<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart2_senddata
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SelfCheck
+<BR><BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SelfCheck
 </UL>
 
 <P><STRONG><a name="[91]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ResetBits))
@@ -861,7 +860,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[8f]"></a>Hc14SendCmd</STRONG> (Thumb, 136 bytes, Stack size 40 bytes, task_hc14.o(i.Hc14SendCmd))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = Hc14SendCmd &rArr; usart2_senddata
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = Hc14SendCmd &rArr; Get_CrcXOR
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart2_senddata
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_CrcXOR
@@ -1320,8 +1319,7 @@ Global Symbols
 <P><STRONG><a name="[ce]"></a>SelfCheck</STRONG> (Thumb, 566 bytes, Stack size 88 bytes, task_ctrl.o(i.SelfCheck))
 <BR><BR>[Stack]<UL><LI>Max Depth = 472<LI>Call Chain = SelfCheck &rArr; My_SD_ReadLog &rArr; f_read &rArr; get_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SD_WriteDisk &rArr; SD_SendCmd &rArr; SD_Select &rArr; SD_WaitReady &rArr; SD_SPI_ReadWriteByte &rArr; Spi1_WriteReadByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;My_SD_ReadLog
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;My_SD_ReadLog
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_USART3_SendThreeBytes
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_USART3_SendString
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;My_SD_WriteLog
@@ -1329,6 +1327,7 @@ Global Symbols
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_USART3_ClearStruct
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Get_RTC_Time
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Ms
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
@@ -1937,10 +1936,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BatLevelRefresh
 </UL>
 
-<P><STRONG><a name="[9a]"></a>usart2_senddata</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, usart2.o(i.usart2_senddata))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = usart2_senddata
-</UL>
-<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<P><STRONG><a name="[9a]"></a>usart2_senddata</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, usart2.o(i.usart2_senddata))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart2_senddata
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hc14SendCmd
 </UL>

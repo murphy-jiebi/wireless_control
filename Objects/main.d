@@ -4,12 +4,12 @@
 .\objects\main.o: User\bat.h
 .\objects\main.o: User\LCD_USART3.h
 .\objects\main.o: User\usart1.h
-.\objects\main.o: D:\MKD539\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: User\LCD.h
 .\objects\main.o: User\main.h
 .\objects\main.o: .\Libraries\CMSIS\stm32f10x.h
 .\objects\main.o: .\Libraries\CMSIS\core_cm3.h
-.\objects\main.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: .\Libraries\CMSIS\system_stm32f10x.h
 .\objects\main.o: .\User\stm32f10x_conf.h
 .\objects\main.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -36,8 +36,8 @@
 .\objects\main.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\main.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\main.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\main.o: D:\MKD539\ARM\ARMCC\Bin\..\include\math.h
-.\objects\main.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: .\BSP\Inc\bsp_gpio.h
 .\objects\main.o: User\delay.h
 .\objects\main.o: User\bsp_ws281x.h

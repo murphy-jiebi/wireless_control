@@ -2,7 +2,7 @@
 .\objects\usart2.o: User\usart2.h
 .\objects\usart2.o: .\Libraries\CMSIS\stm32f10x.h
 .\objects\usart2.o: .\Libraries\CMSIS\core_cm3.h
-.\objects\usart2.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usart2.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\usart2.o: .\Libraries\CMSIS\system_stm32f10x.h
 .\objects\usart2.o: .\User\stm32f10x_conf.h
 .\objects\usart2.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -29,6 +29,6 @@
 .\objects\usart2.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\usart2.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\usart2.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\usart2.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\usart2.o: D:\MKD539\ARM\ARMCC\Bin\..\include\string.h
+.\objects\usart2.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\usart2.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\usart2.o: .\BSP\Inc\bsp_gpio.h

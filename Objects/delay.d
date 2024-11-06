@@ -1,7 +1,7 @@
 .\objects\delay.o: User\delay.c
 .\objects\delay.o: .\Libraries\CMSIS\stm32f10x.h
 .\objects\delay.o: .\Libraries\CMSIS\core_cm3.h
-.\objects\delay.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\delay.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\delay.o: .\Libraries\CMSIS\system_stm32f10x.h
 .\objects\delay.o: .\User\stm32f10x_conf.h
 .\objects\delay.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h

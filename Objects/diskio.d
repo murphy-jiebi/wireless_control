@@ -5,7 +5,7 @@
 .\objects\diskio.o: .\User\main.h
 .\objects\diskio.o: .\Libraries\CMSIS\stm32f10x.h
 .\objects\diskio.o: .\Libraries\CMSIS\core_cm3.h
-.\objects\diskio.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\diskio.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\diskio.o: .\Libraries\CMSIS\system_stm32f10x.h
 .\objects\diskio.o: .\User\stm32f10x_conf.h
 .\objects\diskio.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -32,8 +32,8 @@
 .\objects\diskio.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\diskio.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\diskio.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\diskio.o: D:\MKD539\ARM\ARMCC\Bin\..\include\math.h
-.\objects\diskio.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\diskio.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\diskio.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\diskio.o: .\BSP\Inc\bsp_gpio.h
 .\objects\diskio.o: .\User\delay.h
 .\objects\diskio.o: .\User\tim.h

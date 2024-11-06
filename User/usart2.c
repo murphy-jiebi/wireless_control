@@ -48,10 +48,10 @@ void USART2_Init(unsigned int baudrate)
 uint8_t usart2_senddata(uint8_t *buf,uint8_t len)
 {
     uint8_t i=0;
-    if(GET_HC_STATUS!=0)
-    {
-        return 0;
-    }
+//    if(GET_HC_STATUS!=0)
+//    {
+//        return 0;
+//    }
     for(i=0;i<len;i++)
     {
         while (!(USART2->SR & USART_SR_TXE));

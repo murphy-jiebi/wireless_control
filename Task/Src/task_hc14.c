@@ -2,7 +2,7 @@
 #include "usart2.h"
 #include "bsp_key.h"
 
-const uint8_t groupSn=1;
+const uint8_t groupSn=3;
 
 extern uint8_t flag_checkORfire[29];
 

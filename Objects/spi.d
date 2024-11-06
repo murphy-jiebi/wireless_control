@@ -2,7 +2,7 @@
 .\objects\spi.o: App\SPI\spi.h
 .\objects\spi.o: .\Libraries\CMSIS\stm32f10x.h
 .\objects\spi.o: .\Libraries\CMSIS\core_cm3.h
-.\objects\spi.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\spi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\spi.o: .\Libraries\CMSIS\system_stm32f10x.h
 .\objects\spi.o: .\User\stm32f10x_conf.h
 .\objects\spi.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -30,8 +30,8 @@
 .\objects\spi.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\spi.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\objects\spi.o: .\User\main.h
-.\objects\spi.o: D:\MKD539\ARM\ARMCC\Bin\..\include\math.h
-.\objects\spi.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\spi.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\spi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\spi.o: .\BSP\Inc\bsp_gpio.h
 .\objects\spi.o: .\User\delay.h
 .\objects\spi.o: .\User\tim.h

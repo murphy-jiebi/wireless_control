@@ -1,7 +1,7 @@
 .\objects\usart1.o: User\usart1.c
 .\objects\usart1.o: .\Libraries\CMSIS\stm32f10x.h
 .\objects\usart1.o: .\Libraries\CMSIS\core_cm3.h
-.\objects\usart1.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\usart1.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\usart1.o: .\Libraries\CMSIS\system_stm32f10x.h
 .\objects\usart1.o: .\User\stm32f10x_conf.h
 .\objects\usart1.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h
@@ -28,6 +28,6 @@
 .\objects\usart1.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
 .\objects\usart1.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\objects\usart1.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
-.\objects\usart1.o: D:\MKD539\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\usart1.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\usart1.o: User\usart1.h
-.\objects\usart1.o: D:\MKD539\ARM\ARMCC\Bin\..\include\string.h
+.\objects\usart1.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
