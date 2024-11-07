@@ -1,6 +1,6 @@
 Dependencies for Project 'Demo_proj', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\User\main.c)(0x6724EA9E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\User -I .\Libraries\CMSIS -I .\Libraries\STM32F10x_StdPeriph_Driver\inc -I .\Libraries\STM32F10x_StdPeriph_Driver\src -I .\App\FATFS -I .\App\SDCard -I .\App\SPI -I .\App\ADC -I .\App\KEY -I .\BSP\Inc -I .\Task\Inc --no-multibyte-chars-ID:\keil5\pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="534" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\User\main.c)(0x672CC747)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\User -I .\Libraries\CMSIS -I .\Libraries\STM32F10x_StdPeriph_Driver\inc -I .\Libraries\STM32F10x_StdPeriph_Driver\src -I .\App\FATFS -I .\App\SDCard -I .\App\SPI -I .\App\ADC -I .\App\KEY -I .\BSP\Inc -I .\Task\Inc --no-multibyte-chars-ID:\keil5\pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="534" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (User\ws2812b.h)(0x667E7008)
 I (User\tim.h)(0x6694C152)
 I (User\bat.h)(0x6693F622)
@@ -320,7 +320,7 @@ I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
 I (User\delay.h)(0x6657E676)
 F (.\User\wired_port.c)(0x66DF06F0)()
-F (.\User\usart2.c)(0x672B7445)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\User -I .\Libraries\CMSIS -I .\Libraries\STM32F10x_StdPeriph_Driver\inc -I .\Libraries\STM32F10x_StdPeriph_Driver\src -I .\App\FATFS -I .\App\SDCard -I .\App\SPI -I .\App\ADC -I .\App\KEY -I .\BSP\Inc -I .\Task\Inc --no-multibyte-chars-ID:\keil5\pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="534" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\usart2.o --omf_browse .\objects\usart2.crf --depend .\objects\usart2.d)
+F (.\User\usart2.c)(0x672B7AF3)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\User -I .\Libraries\CMSIS -I .\Libraries\STM32F10x_StdPeriph_Driver\inc -I .\Libraries\STM32F10x_StdPeriph_Driver\src -I .\App\FATFS -I .\App\SDCard -I .\App\SPI -I .\App\ADC -I .\App\KEY -I .\BSP\Inc -I .\Task\Inc --no-multibyte-chars-ID:\keil5\pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="534" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\usart2.o --omf_browse .\objects\usart2.crf --depend .\objects\usart2.d)
 I (User\usart2.h)(0x67224D9A)
 I (.\Libraries\CMSIS\stm32f10x.h)(0x4D783CB4)
 I (.\Libraries\CMSIS\core_cm3.h)(0x4D523B58)
@@ -875,7 +875,7 @@ I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4D783BB4)
-F (.\Task\Src\task_hc14.c)(0x672B74EA)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\User -I .\Libraries\CMSIS -I .\Libraries\STM32F10x_StdPeriph_Driver\inc -I .\Libraries\STM32F10x_StdPeriph_Driver\src -I .\App\FATFS -I .\App\SDCard -I .\App\SPI -I .\App\ADC -I .\App\KEY -I .\BSP\Inc -I .\Task\Inc --no-multibyte-chars-ID:\keil5\pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="534" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\task_hc14.o --omf_browse .\objects\task_hc14.crf --depend .\objects\task_hc14.d)
+F (.\Task\Src\task_hc14.c)(0x672CC79E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\User -I .\Libraries\CMSIS -I .\Libraries\STM32F10x_StdPeriph_Driver\inc -I .\Libraries\STM32F10x_StdPeriph_Driver\src -I .\App\FATFS -I .\App\SDCard -I .\App\SPI -I .\App\ADC -I .\App\KEY -I .\BSP\Inc -I .\Task\Inc --no-multibyte-chars-ID:\keil5\pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="534" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\task_hc14.o --omf_browse .\objects\task_hc14.crf --depend .\objects\task_hc14.d)
 I (.\Task\Inc\task_hc14.h)(0x66F40AE8)
 I (.\User\main.h)(0x66F2D4F6)
 I (.\Libraries\CMSIS\stm32f10x.h)(0x4D783CB4)
@@ -913,7 +913,7 @@ I (.\User\delay.h)(0x6657E676)
 I (.\User\tim.h)(0x6694C152)
 I (.\User\usart2.h)(0x67224D9A)
 I (.\BSP\Inc\bsp_key.h)(0x66E99452)
-F (.\Task\Src\task_ctrl.c)(0x672612E6)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\User -I .\Libraries\CMSIS -I .\Libraries\STM32F10x_StdPeriph_Driver\inc -I .\Libraries\STM32F10x_StdPeriph_Driver\src -I .\App\FATFS -I .\App\SDCard -I .\App\SPI -I .\App\ADC -I .\App\KEY -I .\BSP\Inc -I .\Task\Inc --no-multibyte-chars-ID:\keil5\pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="534" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\task_ctrl.o --omf_browse .\objects\task_ctrl.crf --depend .\objects\task_ctrl.d)
+F (.\Task\Src\task_ctrl.c)(0x672CC756)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\User -I .\Libraries\CMSIS -I .\Libraries\STM32F10x_StdPeriph_Driver\inc -I .\Libraries\STM32F10x_StdPeriph_Driver\src -I .\App\FATFS -I .\App\SDCard -I .\App\SPI -I .\App\ADC -I .\App\KEY -I .\BSP\Inc -I .\Task\Inc --no-multibyte-chars-ID:\keil5\pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="534" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o .\objects\task_ctrl.o --omf_browse .\objects\task_ctrl.crf --depend .\objects\task_ctrl.d)
 I (.\Task\Inc\task_ctrl.h)(0x66F40AE8)
 I (.\User\main.h)(0x66F2D4F6)
 I (.\Libraries\CMSIS\stm32f10x.h)(0x4D783CB4)

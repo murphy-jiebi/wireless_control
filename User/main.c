@@ -76,7 +76,8 @@ int main()
 	TIM5_Init();
     TIM_Cmd(TIM3, ENABLE);
     memset(&keyState[WIRE_L1],NO_CON,6+12+6);
-
+    memset(&keyState[WIRE_L1],NO_SELECT,6);
+    
 	while (1)
 	{
         keyScan();
